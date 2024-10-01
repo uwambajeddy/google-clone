@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet – Frontend Web Development - C2</title>
+    <link rel="shortcut icon"
+        href="//fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-24dp/logo_meet_2020q4_color_1x_web_24dp.png"
+        sizes="24x24">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="main-sidebar-container">
+        <div class="main-video-area">
+            <p class="user-name">Seyi Adebayo</p>
+            <div class="center-avatar">
+                <img src="https://ui-avatars.com/api/?name=S&background=7e61c6&color=fff" class="avatar"
+                    alt="Participant Avatar">
+                <!-- <div class="controls-overlay">
+                    <i class="fas fa-microphone-slash"></i>
+                    <i class="fas fa-video-slash"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div> -->
+            </div>
+            <img src="./images/image.png" class="floating-video-preview" alt="Video Preview">
+            <span class="material-symbols-outlined" style="color: white; font-size: 24px;">mic_off</span>
+        </div>
+        <div class="sidebar-container">
+            <div class="sidebar-header-container">
+
+                <div class="sidebar-header">
+                    <h2>People</h2>
+                    <button class="close-btn">✖</button>
+                </div>
+
+                <button class="save-attendance"> <i class="fa-regular fa-floppy-disk"
+                        style=" font-size: 20px; width: 25px;"></i> Save attendance</button>
+
+                <div class="controls">
+                    <button class="mute-all-btn"><i class="fas fa-microphone-slash"></i> All muted</button>
+                    <button class="add-people-btn"><i class="fas fa-user-plus"></i> Add people</button>
+                </div>
+            </div>
+            <div class="sidebar-content-container">
+
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search for people" id="search-input">
+                </div>
+
+                <p class="in-meeting-text">IN MEETING</p>
+                <div class="contributors-section">
+                    <div class="contributors-header">
+                        <span>Contributors</span>
+                        <div class="contributors-header-right">
+                            <span>25</span>
+                            <i class="fa-solid fa-angle-up"></i>
+                        </div>
+                    </div>
+
+                    <ul id="participants-list">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-control-panel">
+        <span class="meeting-info">10:38 AM | Frontend Web Development (q&a) - C2</span>
+        <div class="control-buttons">
+            <div class="control-btn-container">
+                <i class="fa-solid fa-angle-up" style="color: #6e6e6e; font-size: 18px;"></i>
+                <button class="control-btn">
+                    <span class="material-symbols-outlined">
+                        mic
+                    </span>
+                </button>
+            </div>
+            <div class="control-btn-container">
+                <i class="fa-solid fa-angle-up" style="color: #6e6e6e; font-size: 18px;"></i>
+                <button class="control-btn">
+                    <i class="fas fa-video"></i>
+                </button>
+            </div>
+            <button class="control-btn">
+                <i class="fa-regular fa-closed-captioning"></i>
+            </button>
+            <button class="control-btn">
+                <i class="fa-regular fa-face-smile"></i>
+            </button>
+            <button class="control-btn">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </button>
+            <button class="control-btn">
+                <i class="fa-regular fa-hand"></i>
+            </button>
+            <button class="control-btn">
+                <i class="fas fa-ellipsis-v"></i>
+            </button>
+            <button class="control-btn hangup-btn">
+                <i class="fas fa-phone"></i>
+            </button>
+        </div>
+        <div class="meeting-controls">
+            <button class="meeting-control-btn">
+                <i class="fas fa-info-circle"></i>
+            </button>
+            <button id="participants-btn" class="meeting-control-btn">
+                <i class="fas fa-user-friends" style="color: #a2c8fb !important;"></i>
+            </button>
+            <button class="meeting-control-btn">
+                <i class="fas fa-comment-alt"></i>
+            </button>
+            <button class="meeting-control-btn">
+                <i class="fas fa-tasks"></i>
+            </button>
+            <button class="meeting-control-btn">
+                <i class="fas fa-lock"></i>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
